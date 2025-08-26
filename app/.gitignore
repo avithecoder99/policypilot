@@ -1,0 +1,10 @@
+.venv/
+venv/
+.vscode/
+__pycache__/
+*.pyc
+.env
+.env.example
+.env.docker
+app/data/*.faiss
+app/data/*.json

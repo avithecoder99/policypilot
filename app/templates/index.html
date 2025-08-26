@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Employee Policy Q&A</title>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Employee Policy Q&A</h1>
+    <p class="muted">Ask any HR/EX policy question. Answers are grounded strictly in the policy PDF.</p>
+
+    {% if not pdf_found %}
+    <div class="warning">
+      <strong>PDF not found.</strong> Place <code>employee_policy_handbook.pdf</code> under <code>app/data/</code> and restart.
+    </div>
+    {% endif %}
+
+    <div class="card">
+      <div class="row">
+        <input id="question" placeholder="e.g., How many PTO days do I get each year?" />
+        <button id="askBtn">Ask</button>
+      </div>
+      <div id="loading" class="loading hidden">Thinking...</div>
+      <div id="answer" class="answer"></div>
+      <div id="sources" class="sources"></div>
+    </div>
+
+    <footer>
+      <span>Powered by FastAPI + OpenAI + FAISS • Policy-backed answers only</span>
+    </footer>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

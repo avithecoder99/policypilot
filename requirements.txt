@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+jinja2
+PyPDF2
+faiss-cpu
+numpy
+openai>=1.30.0
+python-dotenv

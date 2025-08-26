@@ -1,0 +1,9 @@
+.venv/
+venv/
+.vscode/
+__pycache__/
+*.pyc
+.env
+.env.docker
+app/data/*.faiss
+app/data/*.json
