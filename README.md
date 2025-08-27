@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # policypilot
 =======
 # EX Copilot – Policy Q&A (FastAPI + PDF + RAG)
@@ -61,4 +60,3 @@ az webapp config container set -g <rg> -n <webAppName>   --docker-custom-image-n
 - If your PDF is a scanned image, add OCR (e.g., Tesseract or Azure Form Recognizer) before indexing.
 - To rebuild the index after updating the PDF: POST to `/reindex`.
 - The app cites pages used under **Sources** and refuses to answer outside-policy questions.
->>>>>>> 11c8250 (Initial commit: PolicyPilot FastAPI RAG app)
